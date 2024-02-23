@@ -12,7 +12,9 @@ body {
 /* navigation menu */
 nav {
     background: rgb(239, 80, 41);
-   margin: 0 auto;
+    border-radius: 35px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     display: flex;
     padding: 10px;
 }
@@ -32,12 +34,13 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: #bfd0c8;
 }
 
 /* main container area beneath menu */
 main {
-    background: rgb(245, 238, 219);
+    background: rgb(211, 172, 63);
+    border-radius: 15px;
     display: flex;
 }
 .sidebar {
@@ -54,7 +57,9 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px rgb(86, 91, 174) ridge;
+    border-radius: 25px;
+    border-style: dashed;
     padding: 8px;
 }
 h2, h3 {
