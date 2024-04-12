@@ -15,7 +15,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 125px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -48,7 +48,7 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(20) {
 				box.css("left", newPositionX);
 			}
 
@@ -70,22 +70,58 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
+			
 			function update() {
-				
+   positionX = positionX + 10;
+   moveBoxTo(positionX);
+};
 
-			};
+if (conditionIsTrue) {
+     // then do X, Y, and Z
+}
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
+			var speed = 10;
+			speed += 3;;
+			speed = -speed;
+            speed *= -1;
+            speed = speed * -1;
+			var points = 0;
+			
+		
+			
 			function handleBoxClick() {
-				
+    positionX = 0;
+	positionX = positionX + speed;
 
+    // your code to increase the points variable by 1
 
-			};
-		})();
+    changeBoxText(points);
+}
+positionX = positionX + 1;
+// during update... 
+// Frame 1
+positionX = 0 + 10;         // positionX = 10
+moveBoxTo(positionX);
+
+// Frame 2
+positionX = 10 + 10;         // positionX = 20
+moveBoxTo(positionX);
+
+// Frame 3
+positionX = 20 + 10;         // positionX = 30
+moveBoxTo(positionX);
+
+// Frame 4
+positionX = 30 + 10;         // positionX = 40
+moveBoxTo(positionX);
+
+// so on...			};
+		
 	</script>
 </body>
 </html>
