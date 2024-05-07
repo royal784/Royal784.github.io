@@ -79,10 +79,16 @@
 			function update() {
 				positionX = positionX + speed;
 
-
+                speed += 3;
 moveBoxTo(positionX, positionY) 
 
-   
+if (speed > 0) {
+    return speed + 3
+}
+
+if (speed < 0) {
+    return speed - 3
+}
 
 
 
