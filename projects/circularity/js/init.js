@@ -37,9 +37,8 @@ var circles = [] ;
         drawCircle();
         drawCircle();
         drawCircle();
-        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
-         
-            
+        for (var drawCircle = 0; drawCircle < 100; drawCicle++) {
+           
         }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -51,20 +50,35 @@ var circles = [] ;
         and check to see if it has drifted off the screen.         
         */
         function update() {
-            for (var i = 0; i < update.length; i++) {
+            for (var i = 0; i < circles.length; i++) {
                
               }
             // TODO 4 : Update the circle's position //
-     
+         physikz.updatePosition(circles[0])
+         physikz.updatePosition(circles[1])
+         physikz.updatePosition(circles[2])
+         physikz.updatePosition(circles[3])
+         physikz.updatePosition(circles[4])
+
+         for (var physikzUpdatePosition = 0; physikzUpdatePosition < 100; physikzUpdatePosition++) {
+           
+         }
         
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
+           game.checkCirclePosition(circles[0])
+           game.checkCirclePosition(circles[1])
+           game.checkCirclePosition(circles[2])
+           game.checkCirclePosition(circles[3])
+           game.checkCirclePosition(circles[4])
+
+           for (var gameCheckCirclePosition = 0; gameCheckCirclePosition < 100; gameCheckCirclePosition++) {
            
-            // 4 and 5 were deleted because the for loop already copies it so these are no longer needed.
+            
            
             // TODO 9 : Iterate over the array
            
-            
+            // 4 and 5 were deleted because the for loop already copies it so these are no longer needed.
         }
     
         /* 
