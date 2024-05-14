@@ -32,13 +32,10 @@ var circles = [] ;
         circles.push(circle);
     }
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        for (var drawCircle = 0; drawCircle < 100; drawCicle++) {
-           
+  
+        
+        for (var i = 0; i < 100; i++) {
+           drawCircle()
         }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -51,30 +48,15 @@ var circles = [] ;
         */
         function update() {
             for (var i = 0; i < circles.length; i++) {
-               
+                physikz.updatePosition(circles[i])
+                game.checkCirclePosition(circles[i])
               }
             // TODO 4 : Update the circle's position //
-         physikz.updatePosition(circles[0])
-         physikz.updatePosition(circles[1])
-         physikz.updatePosition(circles[2])
-         physikz.updatePosition(circles[3])
-         physikz.updatePosition(circles[4])
-
-         for (var physikzUpdatePosition = 0; physikzUpdatePosition < 100; physikzUpdatePosition++) {
-           
-         }
+         
         
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           game.checkCirclePosition(circles[0])
-           game.checkCirclePosition(circles[1])
-           game.checkCirclePosition(circles[2])
-           game.checkCirclePosition(circles[3])
-           game.checkCirclePosition(circles[4])
-
-           for (var gameCheckCirclePosition = 0; gameCheckCirclePosition < 100; gameCheckCirclePosition++) {
            
-            
            
             // TODO 9 : Iterate over the array
            
@@ -94,12 +76,7 @@ var circles = [] ;
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            game.checkCirclePosition = function (circle) {
-                
-                if (circle.x > canvas.width) {
-                  circle.x = 0;
-                }
-                var rightEdge = circle.x + circle.radius;
+            
               
 
 
