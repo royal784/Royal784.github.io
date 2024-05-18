@@ -93,9 +93,9 @@ var circles = [] ;
         game.circle = circle;
         game.circles = circles;
         game.drawCircle = drawCircle;
-        game.update = update;
+        game.update = update;                                                                                                                                                                                     
         
-        app.addUpdateable(window.opspark.game);
+        app.addUpdateable(window.opspark.game); 
     }
 };
 

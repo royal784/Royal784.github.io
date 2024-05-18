@@ -82,13 +82,7 @@
                 speed += 3;
 moveBoxTo(positionX, positionY) 
 
-if (speed > 0) {
-    return speed + 3
-}
 
-if (speed < 0) {
-    return speed - 3
-}
 
 
 
@@ -123,9 +117,20 @@ if (positionX < 0) {
                speed = speed + 7;
                points = points + 1;
                    changeBoxText(points);
-              
-           };
-       })();
+               };
+			   if (speed % 2 === 0 ) {
+                   console.log(speed + 3)
+			   }
+	           
+			   else if(speed % 2 !== 0) {
+				console.log(speed - 3)
+			   }
+
+}
+
+
+
+       
 
 
 	</script>
@@ -133,3 +138,4 @@ if (positionX < 0) {
 </html>
 
 
+)
