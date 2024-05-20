@@ -118,15 +118,20 @@ if (positionX < 0) {
                points = points + 1;
                    changeBoxText(points);
                };
-			   if (speed % 2 === 0 ) {
-                   console.log(speed + 3)
-			   }
-	           
-			   else if(speed % 2 !== 0) {
-				console.log(speed - 3)
-			   }
 
+if (circle.x > canvis.width) {
+	circle.x = 0;
 }
+if (circle.y > canvis.height) {
+	circle.y = 0;
+}
+if (circle.x < 0)  {
+	circle.x = canvis.width
+}
+if (circle.y < 0)  {
+	circle.x = canvis.height
+}
+
 
 
 
@@ -138,4 +143,3 @@ if (positionX < 0) {
 </html>
 
 
-)
